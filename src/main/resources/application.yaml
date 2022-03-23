@@ -1,2 +1,12 @@
-server:
-  port: 9090
+spring:
+  datasource:
+    username: sqldb-azure01@sqldb-azure01
+    url: jdbc:sqlserver://sqldb-azure01.database.windows.net:1433;database=sqldb-azure
+    password: 'Azure@2022'
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.SQLServer2012Dialect
+    hibernate:
+      ddl-auto: create
+      show-sql: true
