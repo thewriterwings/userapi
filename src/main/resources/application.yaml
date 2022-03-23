@@ -1,4 +1,5 @@
-spring:
+server:
+  port: 9090
   datasource:
     username: sqldb-azure01@sqldb-azure01
     url: jdbc:sqlserver://sqldb-azure01.database.windows.net:1433;database=sqldb-azure
